@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300&display=swap');
+
+body {
+    background-color: #212529;
+}
+
+nav.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav.navbar1 {
+    display: none;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav.navbar a, nav.navbar1 a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+}
+
+nav.navbar a.active-home, nav.navbar1 a.active-home,
+nav.navbar a.active-about, nav.navbar1 a.active-about,
+nav.navbar a.active-portfolio, nav.navbar1 a.active-portfolio,
+nav.navbar a.active-contact, nav.navbar1 a.active-contact
+{
+    background-color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    color: black;
+}
+
+@media (max-width: 700px){
+    nav.navbar {
+        display: none;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+    }
+    nav.navbar1 {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+    nav.navbar1 a {
+        margin-top: 5px;
+        padding: 10px 20px;
+    }
+    nav.navbar a.active-home, nav.navbar1 a.active-home,
+    nav.navbar a.active-about, nav.navbar1 a.active-about,
+    nav.navbar a.active-portfolio, nav.navbar1 a.active-portfolio,
+    nav.navbar a.active-contact, nav.navbar1 a.active-contact
+    {
+        border-radius: 5px 5px 0 0;
+    }
+}

@@ -19,7 +19,14 @@ nav.navbar a, nav.navbar1 a {
     color: white;
     text-decoration: none;
     padding: 10px;
+    transition: .5s;
     font-weight: 600;
+}
+
+nav.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.13);
+    border-radius: 5px;
+    transition: .5s;
 }
 
 nav.navbar a.active-home, nav.navbar1 a.active-home,
@@ -31,9 +38,72 @@ nav.navbar a.active-contact, nav.navbar1 a.active-contact
     border-radius: 5px;
     font-weight: bold;
     color: black;
+
+}
+/* main content */
+/* .gambarlah:hover {
+    transition: .5s;
+    transform: scale(1.2);
+} */
+.gambar-diri {
+    position: absolute;
+    width: 40%;
+    transform: translate(600px,-200px);
+    box-shadow: 10px 10px 5px white;
+    transition: .5s;
+}
+.gambar-diri:hover{
+    transform: translate(620px, -180px);
+    transition: .5s;
 }
 
-@media (max-width: 700px){
+.bagian1 p {
+    width: 50%;
+}
+
+.bagian2 {
+    margin-top: 100px;
+}
+@media (max-width:900px){
+    .gambar-diri{
+        transform: translate(0,0);
+        width: 80%;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .gambar-diri:hover{
+        transform: translate(0,0);
+    }
+    .bagian1 p {
+        width: 100%;
+        text-align: justify;
+    }
+    .bagian2{
+        margin-top: 400px;
+    }
+}
+@media (max-width:700px){
+    .gambar-diri{
+        transform: translate(0,0);
+        width: 80%;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .gambar-diri:hover{
+        transform: translate(0,0);
+    }
+    .bagian1 p {
+        width: 100%;
+        text-align: justify;
+    }
+    .bagian2{
+        margin-top: 350px;
+    }
+}
+
+@media (max-width: 500px){
     nav.navbar {
         display: none;
         width: 100%;
@@ -56,5 +126,18 @@ nav.navbar a.active-contact, nav.navbar1 a.active-contact
     nav.navbar a.active-contact, nav.navbar1 a.active-contact
     {
         border-radius: 5px 5px 0 0;
+    }
+
+    /* main content */
+    .gambar-diri {
+        box-shadow: 0 0 5px 2px white;
+        width: 94%;
+        z-index: -1;
+    }
+    .gambar-diri:hover{
+        transform: translate(0, 0);
+    }    
+    .bagian2{
+        margin-top: 300px;
     }
 }

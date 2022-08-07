@@ -11,9 +11,9 @@
     <title>Yazid's Personal Website</title>
 </head>
 <body>
-
+    
     <!-- tablet/desktop -->
-    <nav class="navbar bg-dark">
+    <nav class="navbar bg-dark bg-opacity-75">
         <a href="#" class="active-home">Home</a>
         <a href="about.html" class="">About</a>
         <a href="portfolio.html" class="">Portofolio</a>
@@ -22,7 +22,7 @@
     <!-- end table/desktop -->
 
     <!-- mobile -->
-    <nav class="navbar1 bg-dark">
+    <nav class="navbar1 bg-dark bg-opacity-75">
         <a href="#" class="active-home"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
             <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
@@ -40,24 +40,70 @@
           </svg></a>
     </nav>
     <!-- endmobile -->
-
+    
     <!-- Main Content -->
-    <div class="container mt-5 text-light bagian1">
-        <h2>Hello! I'm Muhammad Yazid Akbar</h2>
-        <h3 class="lead text-secondary"><i class="bi-globe2"></i> Web Developer!</h3>
-        <p>I'm 17 y.o and I love Laravel, Bootstrap, MDBootstrap, DBMS MySQL. I'm currently learning JavaScript programming language, so i'm gonna make a website that combine 2 framework, laravel for backend and react JS for the front-end. My goal is to become a fullstack developer.</p>
-        <i class="bi-bootstrap fs-1"></i>
-        <img src="img/gambar.jpg" class="img-fluid gambar-diri" alt="Muhammad Yazid Akbar">
+    <div class="container mt-5 text-light bagian1 d-flex">
+        <div class="teks">
+            <h2 class="fw-bold">Hello! I'm Muhammad Yazid Akbar</h2>
+            <h3 class="lead text-secondary"><i class="bi-globe2"></i> Web Developer!</h3>
+            <p>I'm 17 y.o and I mid-level on <strong>Laravel, Bootstrap, MDBootstrap, DBMS MySQL.</strong> I'm currently learning <strong>JavaScript programming language</strong>, so i'm gonna make a website that combine <strong>2 framework</strong>, laravel for <strong>backend</strong> and react JS for the <strong>front-end</strong>. My goal is to become a <strong>fullstack developer.</strong></p>
+            <div class="d-flex justify-content-start gap-3">
+                <a href="about.html" class="btn btn-light fw-bold">Read More</a>
+                <a href="portfolio.html" class="btn btn-outline-muted btn-secondary fw-bold">My Project</a>
+            </div>
+        </div>
+        <div class="gambar">
+            <img src="img/gambar.jpg" class="img-fluid gambar-diri" alt="Muhammad Yazid Akbar">
+        </div>
+    </div>
+
+    <!-- background -->
+    <!-- end background -->
+
+    <div class="container text-light bagian2 d-flex flex-wrap justify-content-around">
+        <div class="bagkiri">
+            <h3 class="fw-bold mt-2 text-center">Bootstrap</h3>
+            <hr style="margin-top: 0;">
+            <div class="card bg-dark" style="width: 18rem;">
+                <div class="card-body">
+                  <p class="card-text text-center">kerangka kerja CSS yang <i>open source</i> dan bebas untuk merancang situs web dan aplikasi web.</p>
+                  <center>
+                      <a href="#" class="btn btn-light fw-bolder">Docs</a>
+                  </center>
+                </div>
+              </div>
+        </div>
+        <div class="bagtengah">
+            <h3 class="fw-bold mt-2 text-center">Tech Stack</h3>
+            <hr style="margin-top: 0;">
+            <div class="icon">
+                <svg height="50" viewBox="0 0 512 407.864" width="50" xmlns="http://www.w3.org/2000/svg"><path d="m106.344 0c-29.214 0-50.831 25.57-49.863 53.3.929 26.641-.278 61.145-8.964 89.283-8.717 28.217-23.449 46.098-47.517 48.393v25.912c24.068 2.3 38.8 20.172 47.516 48.393 8.687 28.138 9.893 62.642 8.964 89.283-.968 27.726 20.649 53.3 49.868 53.3h299.347c29.214 0 50.827-25.57 49.859-53.3-.929-26.641.278-61.145 8.964-89.283 8.717-28.221 23.413-46.1 47.482-48.393v-25.912c-24.068-2.3-38.764-20.172-47.482-48.393-8.687-28.134-9.893-62.642-8.964-89.283.968-27.726-20.645-53.3-49.859-53.3h-299.355zm240.775 251.067c0 38.183-28.481 61.34-75.746 61.34h-80.458a8.678 8.678 0 0 1 -8.678-8.678v-199.593a8.678 8.678 0 0 1 8.678-8.678h80c39.411 0 65.276 21.348 65.276 54.124 0 23.005-17.4 43.6-39.567 47.208v1.2c30.176 3.31 50.495 24.21 50.495 53.077zm-84.519-128.1h-45.876v64.8h38.639c29.87 0 46.34-12.028 46.34-33.527-.003-20.148-14.163-31.273-39.103-31.273zm-45.876 90.511v71.411h47.564c31.1 0 47.573-12.479 47.573-35.931s-16.935-35.484-49.573-35.484h-45.564z" fill="#7952b3" fill-rule="evenodd"/></svg>
+                <img width="50px" height="50px" src="https://pbs.twimg.com/profile_images/794174817666744320/vIvy98Qx_400x400.jpg" alt="">
+                <svg width="50" height="50" class="mt-4" viewBox="0 0 256 134" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet"><g fill-rule="evenodd"><ellipse fill="#8993BE" cx="128" cy="66.63" rx="128" ry="66.63"/><path d="M35.945 106.082l14.028-71.014H82.41c14.027.877 21.041 7.89 21.041 20.165 0 21.041-16.657 33.315-31.562 32.438H56.11l-3.507 18.411H35.945zm23.671-31.561L64 48.219h11.397c6.137 0 10.52 2.63 10.52 7.89-.876 14.905-7.89 17.535-15.78 18.412h-10.52zM100.192 87.671l14.027-71.013h16.658l-3.507 18.41h15.78c14.028.877 19.288 7.89 17.535 16.658l-6.137 35.945h-17.534l6.137-32.438c.876-4.384.876-7.014-5.26-7.014H124.74l-7.89 39.452h-16.658zM153.425 106.082l14.027-71.014h32.438c14.028.877 21.042 7.89 21.042 20.165 0 21.041-16.658 33.315-31.562 32.438h-15.781l-3.507 18.411h-16.657zm23.67-31.561l4.384-26.302h11.398c6.137 0 10.52 2.63 10.52 7.89-.876 14.905-7.89 17.535-15.78 18.412h-10.521z" fill="#232531"/></g></svg>
+                <svg height="50" viewBox="0 -.11376601 49.74245785 51.31690859" width="50" xmlns="http://www.w3.org/2000/svg"><path d="m49.626 11.564a.809.809 0 0 1 .028.209v10.972a.8.8 0 0 1 -.402.694l-9.209 5.302v10.509c0 .286-.152.55-.4.694l-19.223 11.066c-.044.025-.092.041-.14.058-.018.006-.035.017-.054.022a.805.805 0 0 1 -.41 0c-.022-.006-.042-.018-.063-.026-.044-.016-.09-.03-.132-.054l-19.219-11.066a.801.801 0 0 1 -.402-.694v-32.916c0-.072.01-.142.028-.21.006-.023.02-.044.028-.067.015-.042.029-.085.051-.124.015-.026.037-.047.055-.071.023-.032.044-.065.071-.093.023-.023.053-.04.079-.06.029-.024.055-.05.088-.069h.001l9.61-5.533a.802.802 0 0 1 .8 0l9.61 5.533h.002c.032.02.059.045.088.068.026.02.055.038.078.06.028.029.048.062.072.094.017.024.04.045.054.071.023.04.036.082.052.124.008.023.022.044.028.068a.809.809 0 0 1 .028.209v20.559l8.008-4.611v-10.51c0-.07.01-.141.028-.208.007-.024.02-.045.028-.068.016-.042.03-.085.052-.124.015-.026.037-.047.054-.071.024-.032.044-.065.072-.093.023-.023.052-.04.078-.06.03-.024.056-.05.088-.069h.001l9.611-5.533a.801.801 0 0 1 .8 0l9.61 5.533c.034.02.06.045.09.068.025.02.054.038.077.06.028.029.048.062.072.094.018.024.04.045.054.071.023.039.036.082.052.124.009.023.022.044.028.068zm-1.574 10.718v-9.124l-3.363 1.936-4.646 2.675v9.124l8.01-4.611zm-9.61 16.505v-9.13l-4.57 2.61-13.05 7.448v9.216zm-36.84-31.068v31.068l17.618 10.143v-9.214l-9.204-5.209-.003-.002-.004-.002c-.031-.018-.057-.044-.086-.066-.025-.02-.054-.036-.076-.058l-.002-.003c-.026-.025-.044-.056-.066-.084-.02-.027-.044-.05-.06-.078l-.001-.003c-.018-.03-.029-.066-.042-.1-.013-.03-.03-.058-.038-.09v-.001c-.01-.038-.012-.078-.016-.117-.004-.03-.012-.06-.012-.09v-21.483l-4.645-2.676-3.363-1.934zm8.81-5.994-8.007 4.609 8.005 4.609 8.006-4.61-8.006-4.608zm4.164 28.764 4.645-2.674v-20.096l-3.363 1.936-4.646 2.675v20.096zm24.667-23.325-8.006 4.609 8.006 4.609 8.005-4.61zm-.801 10.605-4.646-2.675-3.363-1.936v9.124l4.645 2.674 3.364 1.937zm-18.422 20.561 11.743-6.704 5.87-3.35-8-4.606-9.211 5.303-8.395 4.833z" fill="#ff2d20"/></svg>
+            </div>
+        </div>
+        <div class="bagkanan">
+            <h3 class="fw-bold mt-2 text-center">Laravel</h3>
+            <hr style="margin-top: 0;">
+            <div class="card bg-dark" style="width: 18rem;">
+                <div class="card-body">
+                    <p class="card-text text-center">Laravel adalah kerangka kerja aplikasi web berbasis PHP yang <i>open source</i>, menggunakan konsep Model-View-Controller.</p>
+                    <center>
+                        <a href="#" class="btn btn-light fw-bolder">Docs</a>
+                    </center>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- End Main Content -->
 
-    <div class="container text-light bagian2">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta odio cupiditate alias incidunt nihil suscipit pariatur eos animi inventore nobis.</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta possimus quidem beatae aspernatur hic eligendi aliquam tenetur delectus tempore ab nihil vitae, accusamus recusandae voluptates voluptatem amet illum ipsam magnam. Placeat sequi explicabo, nobis necessitatibus maiores harum consequuntur iste fuga asperiores inventore animi id maxime, in, non voluptatum dolorum reiciendis.</p>
-    </div>
 
-
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+    
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap/js/cursor.js"></script>
 </body>
 </html>
